@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+
+header .banner {
+    width: 100%;
+    height: calc(100vh - 500px);
+    background-image: url("img/pilt1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header .pealkiri {
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 100px;
+    text-transform: uppercase;
+    display: table-cell;
+}
+
+header .pealkiri h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+header .pealkiri h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+}
+
+header nav ul {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 50px 50px;
+}
+
+header nav ul li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+    header .banner {
+        height: calc(100vh - 300px);
+    }
+
+    header .pealkiri {
+        padding-top: 50px;
+    }
+
+    header .pealkiri h1 {
+        font-size: 30px;
+    }
+
+    header .pealkiri h2 {
+        font-size: 20px;
+    }
+
+    header nav ul li {
+        padding: 10px 10px;
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+    }
+}
+
+main .meist {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+}
+
+main .meist h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+}
+
+main .kokkad {
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap; 
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+}
+main .kokkad-pilt {
+    width: 30%;
+    height: 30%;
+}
+
+main .maailmaa-kookid {
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap; 
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+}
+main .toiupild {
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+    margin: 20px;
+    
+    position: relative;
+    text-align: center;
+}
+
+main .toiupild img {
+    width: 100%;
+}
+
+
+main .post-header {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 9px #111;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/** FOOTER **/
+footer .lehe-alus {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: black;
+    overflow: hidden; 
+}
+
+footer .lehe-alus ul {
+    width: fit-content;
+    float: left;
+    padding-left: 0px;
+}
+
+footer .lehe-alus p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+footer .meedia{
+    width: 32px;
+    float: right;
+}
+
+footer .meedia img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+
+
