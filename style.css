@@ -14,16 +14,15 @@ header .pealkiri {
     color: black;
     text-align: center;
     vertical-align: middle;
-    padding-top: 100px;
+    padding-top: 50px;
     text-transform: uppercase;
-    display: table-cell;
 }
 
 header .pealkiri h1 {
     font-family: "Roboto", sans-serif;
     font-size: 50px;
     font-weight: 300;
-    margin: 0;
+    margin: 0 auto;
 }
 
 
@@ -31,7 +30,7 @@ header .pealkiri h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 30px;
     font-weight: 300;
-    margin: 0;
+    margin: 0 auto;
 }
 
 header nav ul {
@@ -83,36 +82,49 @@ h3 {
     font-family: "Open Sans", sans-serif;
     font-size: 30px;
     font-weight: 300;
-    margin: 0;
+    margin: 0 auto;
 }
 
 main .meist {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 300;
-    margin: 0;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    display: -webkit-flex;
+    -webkit-flex-direction: row; 
+    display: -moz-flex;
+    -moz-flex-direction: row;
 }
 
-main .kokkad {
+@media only screen and (max-width: 768px) {
+
+main .meist {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     display: -webkit-flex;
-    -webkit-flex-flow: row wrap; 
+    -webkit-flex-direction: column; 
     display: -moz-flex;
-    -moz-flex-flow: row wrap;
-    justify-content: right;
+    -moz-flex-direction: column;
+    }
 }
+
+/*
 main .kokkad-pilt {
-    -webkit-flex-basis: 300px;
-    -moz-flex-basis: 300px;
-    flex-basis: 300px;
-    margin: 20px;
+    -webkit-flex-basis: 200px;
+    -moz-flex-basis: 200px;
+    flex-basis: 200px;
+    margin: 100px;
 
     position: relative;
 }
+*/
 
 main .kokkad-pilt img {
-    width: 40%;
+    margin: 100px;
+    width: 60%;
 }
 
 main .maailmaa-kookid {
@@ -122,7 +134,9 @@ main .maailmaa-kookid {
     -webkit-flex-flow: row wrap; 
     display: -moz-flex;
     -moz-flex-flow: row wrap;
+    
     justify-content: center;
+    margin-top: 40px;
 }
 
 main .toiupild-ee {
@@ -178,18 +192,27 @@ main .post-header {
 
 
 /** FOOTER **/
-footer .lehe-alus {
-    width: calc(100% - 80px);
-    padding: 40px 40px;
-    margin-top: 20px;
+footer {
     background-color: black;
-    overflow: hidden; 
+    display: flex;
+    margin-top: 40px;
+}
+
+footer .lehe-alus {
+    display: inline-block;
+    flex-grow: 1;
 }
 
 footer .lehe-alus ul {
     width: fit-content;
     float: left;
     padding-left: 0px;
+
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-flex-direction: column; 
+    display: -moz-flex;
+    -moz-flex-direction: column;
 }
 
 footer .lehe-alus p {
@@ -205,6 +228,13 @@ footer .lehe-alus p {
     width: 32px;
     float: right;
     padding-right: 30px;
+    padding-top: 50px;
+
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-flex-direction: column; 
+    display: -moz-flex;
+    -moz-flex-direction: column;
 
 }
 
