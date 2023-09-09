@@ -4,7 +4,7 @@
 header .banner {
     width: 100%;
     height: calc(100vh - 500px);
-    background-image: url("img/pilt1.png");
+    background-image: url("img/baner.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -52,6 +52,11 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
+header hr {
+    clear: both;
+    visibility: hidden;
+} 
+
 @media only screen and (max-width: 768px) {
     header .banner {
         height: calc(100vh - 300px);
@@ -76,7 +81,19 @@ header nav ul li a {
     header nav ul li a {
         font-size: 15px;
     }
+
+    header hr {
+        visibility: visible;
+        color: black;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 3px;
+    } 
+
 }
+
+
 
 main {
     margin-top: 40px;
@@ -98,14 +115,16 @@ main .meist {
 
     display: flex;
     flex-direction: row;
+    /*
     display: -webkit-flex;
     -webkit-flex-direction: row; 
     display: -moz-flex;
     -moz-flex-direction: row;
+    */
 }
 
 main .kokkad-pilt img {
-    margin: 100px;
+    margin: 50px;
     width: 80%;
 }
 
@@ -115,57 +134,31 @@ main .meist {
 
     display: flex;
     flex-direction: column;
+    /*
     display: -webkit-flex;
     -webkit-flex-direction: column; 
     display: -moz-flex;
     -moz-flex-direction: column;
+    */    
     }
 
     main .kokkad-pilt img {
-        margin: 40px;
-        width: 80%;
+        display: none;
     }
 }
-
-/*
-main .kokkad-pilt {
-    -webkit-flex-basis: 200px;
-    -moz-flex-basis: 200px;
-    flex-basis: 200px;
-    margin: 100px;
-
-    position: relative;
-}
-*/
-
 
 main .maailmaa-kookid {
     display: flex;
     flex-flow: row wrap;
+    /*
     display: -webkit-flex;
     -webkit-flex-flow: row wrap; 
     display: -moz-flex;
     -moz-flex-flow: row wrap;
+    */
     
     justify-content: center;
     margin-top: 40px;
-}
-
-main .toiupild-ee {
-    -webkit-flex-basis: 500px;
-    -moz-flex-basis: 500px;
-    flex-basis:255px;
-    margin: 20px;
-    
-    position: relative;
-    text-align: center;
-}
-
-main .toiupild-ee img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    margin: 0 auto;
 }
 
 main .toiupild {
@@ -196,14 +189,14 @@ main .post-header {
     text-shadow: 3px 3px 9px #111;
     
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 
 
-/** FOOTER **/
+
 footer {
     background-color: black;
     display: flex;
@@ -221,10 +214,12 @@ footer .lehe-alus ul {
     padding-left: 0px;
 
     flex-direction: column;
+    /*
     display: -webkit-flex;
     -webkit-flex-direction: column; 
     display: -moz-flex;
     -moz-flex-direction: column;
+    */
 }
 
 footer .lehe-alus p {
@@ -243,11 +238,12 @@ footer .lehe-alus p {
     padding-top: 50px;
 
     flex-direction: column;
+    /*
     display: -webkit-flex;
     -webkit-flex-direction: column; 
     display: -moz-flex;
     -moz-flex-direction: column;
-
+    */
 }
 
 .meedia img {
