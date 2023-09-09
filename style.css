@@ -78,6 +78,10 @@ header nav ul li a {
     }
 }
 
+main {
+    margin-top: 40px;
+}
+
 h3 {
     font-family: "Open Sans", sans-serif;
     font-size: 30px;
@@ -89,6 +93,7 @@ main .meist {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 300;
+    margin-top: 40px;
     margin: 0 auto;
 
     display: flex;
@@ -99,15 +104,26 @@ main .meist {
     -moz-flex-direction: row;
 }
 
+main .kokkad-pilt img {
+    margin: 100px;
+    width: 80%;
+}
+
 @media only screen and (max-width: 768px) {
 
 main .meist {
+
     display: flex;
     flex-direction: column;
     display: -webkit-flex;
     -webkit-flex-direction: column; 
     display: -moz-flex;
     -moz-flex-direction: column;
+    }
+
+    main .kokkad-pilt img {
+        margin: 40px;
+        width: 80%;
     }
 }
 
@@ -122,10 +138,6 @@ main .kokkad-pilt {
 }
 */
 
-main .kokkad-pilt img {
-    margin: 100px;
-    width: 60%;
-}
 
 main .maailmaa-kookid {
     display: flex;
