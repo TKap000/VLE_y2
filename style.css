@@ -106,6 +106,10 @@ h3 {
     margin: 0 auto;
 }
 
+h4 {
+    visibility: hidden;
+}
+
 main .meist {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
@@ -144,6 +148,14 @@ main .meist {
 
     main .kokkad-pilt img {
         display: none;
+    }
+
+    h4 {
+        visibility: visible;
+        font-family: "Open Sans", sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        margin: 0 auto;
     }
 }
 
